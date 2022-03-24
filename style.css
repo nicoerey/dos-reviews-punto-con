@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Header*/
+
+.header{
+    display: flex;
+    height:200px ;
+    width:100% ;
+    background-color: rgba(93, 69, 69, 0.438);
+    border: 2px solid black;
+    
+}
+.ulNav{
+    display: flex;
+    align-items: center;
+}    
+
+.headerLi{
+    list-style: none;
+    font-size: 20px;
+    text-decoration: none;
+    border: solid;
+    border-radius: 15px;
+    margin: 10px;
+    
+}
+
+.headerNav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.headerLogo{
+    height: 180px;
+    width: 300px;
+    margin-left: 20%;
+    margin-top: 10px;
+}
+
+.logo{
+    width: 100%;
+    height: 100%;
+}
+
+/*Index*/
+
+.imgMain{
+    height: 300px;
+    width: 250px;
+}
+
+.main{
+    text-align: center;
+    padding: 100px;
+    border: 2px solid black;
+    background-color: rgba(139, 77, 200, 0.274);
+    width: 100%;
+}
+
+.recoAutor{
+    margin: 30px;
+    
+}
+
+.recoAutor2{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding: 10px;
+    justify-content: space-around;
+
+}
+.recoAutor3{
+    width: 450px;
+    height: 450px;
+}
+
+.carru {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/*Generales*/
+a{
+    text-decoration: none; 
+    padding: 15px;
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+h2{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+h3{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+p{
+    font-size: 18px;
+    padding: 10px;
+}
+
+/*Footer*/
+
+.footer{
+    text-align: center;
+    background-color: rgba(69, 104, 104, 0.418);
+    border: 2px solid black;
+    
+}
+
+.redes{
+    display: inline;
+    list-style: none;
+    margin-top: 10px;      
+}
+.footerLi{
+    display: inline;
+    list-style: none;
+    padding-right: 15px;
+    
+}
+
+/*Contacto*/
+
+.contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(74, 74, 107);
+    padding: 60px;
+}
+.formContacto{
+    height: 45px;
+    width: 300px;
+    display: block;
+    padding: 10px;   
+    
+}
+
+/*Reviews*/
+
+.analisisMain{
+    background-color: aqua;
+    border: solid 2px black;
+    padding: 40px;
+    width: 100%;
+    
+}
+
+.juegoanalisis{
+    width: 100%;
+    height: 550px;
+    text-align:center;
+    border: solid 2px black;
+    align-items: center;
+    background-color: aquamarine;
+    margin-bottom: 15px;
+        
+}
+
+.juegos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.juego{
+    display: flex;
+    padding: 20px;
+}
+
+.imgAnalisis{
+    width: 500px;
+    height: 400px;
+    
+}
+
+.steam{
+    background-color: rgb(183, 152, 212);
+    color: black;
+    margin: 50px;
+    border: solid 1px black;
+    padding: 5px;
+}
+
+.xbox{
+    background-color: green;
+    color: black;
+    margin: 50px;
+    border: solid 1px black;
+    padding: 5px;
+    
+}
+span{
+    font-style: italic; 
+}
+
+/*Sobre Nosotros*/
+
+.mainNosotros{
+    background-color: blanchedalmond;
+    text-align: center;
+    height: 700px;
+    width: 100%;
+    border: solid 2px black;
+    
+}
+.pepes{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 50px;
+}
+
+.imgPepes{
+    width: 50%;
+    height: 200px;
+    padding: 30px;
+}
+
+
+/*Wallpapers*/
+
+.wallpapers{
+    background-color: rgba(66, 71, 60, 0.753);
+    text-align: center;
+    padding: 50px;
+    border: solid 2px black;
+}
+
+.gridContainer{
+    display: grid;
+    grid-template-areas:' img1 img1 img2'
+                        ' img1 img1 img3' ;  
+}
+
+.wallpapers img {
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+}
+
+.img1{
+    grid-area: img1;
+    
+}
+
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+    
+    /*Hearder*/
+    
+    .ulNav{
+        flex-direction: column;
+    }
+    .headerLogo{
+        height: 150px;
+        width: 250px;
+        margin-top: 15px;
+    }
+    .headerLi{
+        font-size: 15px;
+        margin: 2px;              
+    }
+    .header{
+        height: 200px;
+    }
+
+    /*Generales*/
+
+    h1{
+        font-size: 20px;
+        
+    }
+    h2{
+        font-size: 18px;
+        
+    }
+    h3{
+        font-size: 15px;
+        
+    }
+    p{
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    /*Index*/
+
+    .recoAutor3{
+        width: 350px;
+        height: 420px;
+    }
+    .imgMain {
+        height: 300px;
+        width: 300px;
+    }
+    .main{
+        padding: 100px 0px 0px 0px;
+    }
+
+
+
+    /*Footer*/
+
+    .footer{
+        height: 130px;
+    }
+    .footerLi img{
+        width: 25px;
+        height: 25px;
+    }
+
+    /*Contacto*/
+
+    .pepes{
+        flex-wrap: wrap;
+    }
+    .mainNosotros{
+        height: 100%;
+    }
+
+    /*Reviews*/
+    .juego{
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+    .imgAnalisis{
+        width: 300px;
+        height: 250px;
+    }
+    .juegos{
+        display: flex;
+        flex-direction: column;
+    }
+    .juegoanalisis{
+        justify-content: center;
+        height: 100%;
+    }
+    .gridContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .steam{
+        margin: 50px;
+        padding: 5px;
+    }
+    
+    .xbox{
+        margin: 50px;
+        padding: 5px;
+       
+        
+    }
+}
+

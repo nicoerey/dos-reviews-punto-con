@@ -57,19 +57,19 @@
 .imgMain{
     height: 300px;
     width: 250px;
+    
 }
 
 .main{
     text-align: center;
     padding: 100px;
     border: 2px solid black;
-    background-color: rgba(139, 77, 200, 0.274);
+    background-color: rgba(3, 2, 3, 0.274)!important;
     width: 100%;
 }
 
 .recoAutor{
     margin: 30px;
-    
 }
 
 .recoAutor2{
@@ -82,7 +82,8 @@
 }
 .recoAutor3{
     width: 450px;
-    height: 450px;
+    height: 500px;
+    text-align: center;
 }
 
 .carru {
